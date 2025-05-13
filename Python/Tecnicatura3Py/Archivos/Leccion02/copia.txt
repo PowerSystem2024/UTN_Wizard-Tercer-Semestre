@@ -1,0 +1,13 @@
+Programamos con diferentes tipos de archivos, ahora en txt.
+Con esto terminamoscomo por ejemplo: acción, ejecucíon y producción
+las letras son:
+ r= read leer, 
+ a= append anexa,
+ w= write escribe, 
+ x= crea un archivo
+ t= esto es para texto, 
+ b= tipo archivos binario, 
+ w+= leer y escribe, 
+ r+= es igual al w+ 
+Saludis a todos los alumnos de la tercnicatura
+Con esto terminamos

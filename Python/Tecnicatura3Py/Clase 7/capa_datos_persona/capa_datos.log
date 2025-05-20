@@ -13,3 +13,13 @@
 12:13:18 AM:WARNING [logger_base.py:15] Mensaje a nivel warning
 12:13:18 AM:ERROR [logger_base.py:16] Mensaje a nivel error
 12:13:18 AM:CRITICAL [logger_base.py:17] Mensaje a nivel critical
+07:27:40 PM:DEBUG [logger_base.py:13] Mensaje a nivel debug
+07:27:40 PM:INFO [logger_base.py:14] Mensaje a nivel info
+07:27:40 PM:WARNING [logger_base.py:15] Mensaje a nivel warning
+07:27:40 PM:ERROR [logger_base.py:16] Mensaje a nivel error
+07:27:40 PM:CRITICAL [logger_base.py:17] Mensaje a nivel critical
+07:31:19 PM:DEBUG [logger_base.py:13] Mensaje a nivel debug
+07:31:19 PM:INFO [logger_base.py:14] Mensaje a nivel info
+07:31:19 PM:WARNING [logger_base.py:15] Mensaje a nivel warning
+07:31:19 PM:ERROR [logger_base.py:16] Mensaje a nivel error
+07:31:19 PM:CRITICAL [logger_base.py:17] Mensaje a nivel critical

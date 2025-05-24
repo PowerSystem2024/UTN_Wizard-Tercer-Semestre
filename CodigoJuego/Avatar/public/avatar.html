@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA LEYENDA DE AANG: AVATAR</title>
+    <!-- <script src="./js/avatar.js"></script> -->
+</head>
+<body>
+    <!--/* Aqui va mi comentario css */ -->
+    <h1>AVATAR 🔥 🌊 🌪 ⛰</h1> <!-- Esto es statico, No Cambia, el h1 se utiliza una vez -->
+
+    <section id = "seleccionar-personaje">
+        <h2>Elige tu personaje</h2>
+
+        <label for="Zuko">Zuko</label> <!--Esta etiqueta e s para darle un indicador a los usuarios de que están seleccionando-->
+        <input type="radio" name="personaje" id="Zuko"> <!--name es oara agrupar todos los inputs y poder seleccionar-->
+
+        <label for="Katara">Katara</label> <!--El atributo for ayuda a vincular un label con un imput a travez del mismo id-->
+        <input type="radio" name="personaje" id="Katara"> <!--Aca van los personajes-->
+
+        <label for="Aang">Aang</label>
+        <input type="radio" name="personaje" id="Aang"> <!--Le damos un atributo id para saber cual es el valor de cada uno-->
+
+        <label for="Toph">Toph</label>
+        <input type="radio" name="personaje" id="Toph">
+
+        <button id="boton-personaje">Seleccionar</button> > <!--Boton para seleccionar personajes-->
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h2>Elige tu ataque</h2> <!--Se puede utilizar varias veces-->
+        <p>Tu personaje tiene <span>3</span> vidas</p> <!-- Pero esto debe ser dinamico, necesitamos que cambie-->
+        <p>Los personajes del enemigo tiene <span>3</span> vidas</p> <!--Con la etiqueta spam vamos a modificar el 3 con JS-->
+        <p>
+            <button id="boton-fuego">Fuego 🔥</button>
+            <button id="boton-agua">Agua 🌊</button>
+            <button id="boton-tierra">Tierra ⛰</button>
+            <button id="boton-aire">Aire 🌪</button>
+        </p>
+    </section>
+
+    <section id="mensajes"> <!--Será un párrafo dinamico-->
+        <p>Tu personaje atacó con todo el poder dle FUEGO, el personaje del enemigo atacó con el medio poder de la tierra - GANASTE ✨</p>
+    </section>
+
+    <section id="reiniciar">
+        <button id="boton-reiniciar">reiniciar</button>
+    </section>
+
+    <script src="./js/avatar.js"></script>
+
+</body>
+</html>

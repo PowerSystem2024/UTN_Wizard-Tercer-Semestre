@@ -13,28 +13,18 @@ public class Empleado {
     }
     
     //Medodo para la sobreescritura
-    public String ontenerDetalles(){
+    public String obtenerDetalles(){
         return "Nombre: "+this.nombre+", Sueldo: "+this.sueldo;
     }
-
-    public String getNombre() {
+    public String gerNombre(){
         return nombre;
     }
-
-    public void setNombre(String nombre) {
+    
+    public void setNombre(String nombre){
         this.nombre = nombre;
-    }
-
-    public double getSueldo() {
-        return sueldo;
-    }
-
-    public void setSueldo(double sueldo) {
-        this.sueldo = sueldo;
     }
 
     String obtenerDetalles() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
 }

@@ -124,8 +124,9 @@ const result = knightTour(n, startX, startY);
 if (result) {
   console.log("🧭 Recorrido completo del caballo (orden de visita de casillas):");
   printBoard(result.board);
-
+  console.log("C: Inicio de recorrido");
+  console.log("F: Fin del recorrido");
   // Mostrar estadísticas del recorrido
   console.log(`🐎 Total de saltos realizados: ${result.totalJumps}`);
-  console.log(`🔄 Total de retrocesos realizados (backtracking): ${result.backtracks}`);
+  //console.log(`🔄 Total de retrocesos realizados (backtracking): ${result.backtracks}`);
 }

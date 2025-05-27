@@ -32,5 +32,9 @@ public class Empleado {
     public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
     }
+
+    String obtenerDetalles() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

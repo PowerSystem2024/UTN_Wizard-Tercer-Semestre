@@ -18,4 +18,8 @@ public class TestSobreescritura {
     public static void imprimir(Empleado empleado){
         System.out.println("empleados = " + empleado.obtenerDetalles);
     }
+    public static void imprimir(Empleado empleado){
+        System.out.println("empleados = " + empleado.obtenerDetalles);public static void imprimir(Empleado empleado){
+        System.out.println("empleados = " + empleado.obtenerDetalles);public static void imprimir(Empleado empleado){
+        System.out.println("empleados = " + empleado.obtenerDetalles);
 }

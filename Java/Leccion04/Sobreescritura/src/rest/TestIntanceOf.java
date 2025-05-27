@@ -4,7 +4,7 @@ package rest;
 import domain.*;
 
 
-public class TestSobreescritura {
+public class TestIntanceOf {
     public static void main(String[] args) {
         Empleado empleado1 = new Empleado("Juam", 100000);
         imprimir(empleado1);

@@ -7,13 +7,16 @@ import static aritmetica.Aritmetica.division;
 public class TestExcepciones {
     public static void main(String[] args) {
         int resultado = 0;
-//        try{
-//            resultado = division(10, 0);
-//        }catch(Exception e){
-//            System.out.println("Ocurio un Error");
-//            e.printStackTrace(System.out); // se conoce como la pila de excepticiones
-//            System.out.println(e.getMessage());
-//        }   
+        try{
+            resultado = division(10, 0);
+        }catch(Exception e){
+            System.out.println("Ocurio un Error");
+            e.printStackTrace(System.out); // se conoce como la pila de excepticiones
+            System.out.println(e.getMessage());
+        }
+        finally{
+            System.out.println("Se reviso la division entre cero");
+        }
         System.out.println("La variable de resultado tiene como valor: " + resultado);
     } 
 }

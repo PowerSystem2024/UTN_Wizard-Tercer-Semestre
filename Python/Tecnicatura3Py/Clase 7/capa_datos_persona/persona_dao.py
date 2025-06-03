@@ -1,6 +1,4 @@
 from capa_datos_persona.persona import Persona
-
-from capa_datos_persona import conexion
 from capa_datos_persona.conexion import Conexion
 from logger_base import log
 class PersonaDao:
@@ -45,7 +43,7 @@ class PersonaDao:
                 log.debug(f'Persona actualizada: {persona}')
                 return cursor.rewcount
     @classmethod
-    def eliminar(cls, persona, valores=None):
+    def eliminar(cls, persona):
         with Conexion.obtenerConexion():
             with conexion.obtenerCursor() as cursor:
             cursor.execute(cls._SELECCIONAR, valores)

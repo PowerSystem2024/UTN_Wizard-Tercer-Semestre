@@ -77,3 +77,65 @@
         Apellido: None;
         Email: None
     
+08:38:50 PM:DEBUG [conexion.py:23] Conexión Exitosa: <connection object at 0x000001FA4EF99F10; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:38:50 PM:DEBUG [conexion.py:34] Se abrió correctamente el cursor: <cursor object at 0x000001FA4EF34660; closed: 0>
+08:39:01 PM:DEBUG [conexion.py:23] Conexión Exitosa: <connection object at 0x000002434EFA9F10; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:39:01 PM:DEBUG [conexion.py:34] Se abrió correctamente el cursor: <cursor object at 0x000002434EF44660; closed: 0>
+08:44:05 PM:DEBUG [Persona.py:55] 
+        id Persona: 1,
+        Nombre: Juan,
+        Apellido: Perez;
+        Email: jperez@mail.com
+    
+08:44:05 PM:DEBUG [Persona.py:57] 
+        id Persona: None,
+        Nombre: Jose,
+        Apellido: Leopez;
+        Email: ljose@mail.com
+    
+08:44:05 PM:DEBUG [Persona.py:59] 
+        id Persona: 1,
+        Nombre: None,
+        Apellido: None;
+        Email: None
+    
+08:44:25 PM:DEBUG [Persona.py:55] 
+        id Persona: 1,
+        Nombre: Juan,
+        Apellido: Perez;
+        Email: jperez@mail.com
+    
+08:44:25 PM:DEBUG [Persona.py:57] 
+        id Persona: None,
+        Nombre: Jose,
+        Apellido: Leopez;
+        Email: ljose@mail.com
+    
+08:44:25 PM:DEBUG [Persona.py:59] 
+        id Persona: 1,
+        Nombre: None,
+        Apellido: None;
+        Email: None
+    
+09:44:12 PM:DEBUG [conexion.py:23] Conexión Exitosa: <connection object at 0x0000025E6E799F10; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+09:44:12 PM:DEBUG [conexion.py:34] Se abrió correctamente el cursor: <cursor object at 0x0000025E6E734660; closed: 0>
+09:44:23 PM:DEBUG [conexion.py:23] Conexión Exitosa: <connection object at 0x0000021B62AC9F10; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+09:44:23 PM:DEBUG [conexion.py:34] Se abrió correctamente el cursor: <cursor object at 0x0000021B62A64660; closed: 0>
+09:58:30 PM:DEBUG [Persona.py:55] 
+        id Persona: 1,
+        Nombre: Juan,
+        Apellido: Perez;
+        Email: jperez@mail.com
+    
+09:58:30 PM:DEBUG [Persona.py:57] 
+        id Persona: None,
+        Nombre: Jose,
+        Apellido: Leopez;
+        Email: ljose@mail.com
+    
+09:58:30 PM:DEBUG [Persona.py:59] 
+        id Persona: 1,
+        Nombre: None,
+        Apellido: None;
+        Email: None
+    

@@ -1,4 +1,6 @@
 from capa_datos_persona.persona import Persona
+
+from capa_datos_persona import conexion
 from capa_datos_persona.conexion import Conexion
 from logger_base import log
 class PersonaDao:
@@ -42,12 +44,24 @@ class PersonaDao:
                 cursor.execute(cls._ACTUALIZAR, valores)
                 log.debug(f'Persona actualizada: {persona}')
                 return cursor.rewcount
+    @classmethod
+    def eliminar(cls, persona, valores=None):
+        with Conexion.obtenerConexion():
+            with conexion.obtenerCursor() as cursor:
+            cursor.execute(cls._SELECCIONAR, valores)
+            log.debug(f'Los Objetos eliminados son: {persona}')
+            return cursor.rewcount
 
 if __name__ == '__main__' :
+    #Eliminar un registro
+    persona1 = Persona(id_persona=13)
+    personas_eliminadas = PersonaDAO.eliminar(persona1)
+    log.debug(f'Personas eliminadas: {personas_eliminadas}')
+
     # Actualizar un registro
-    persona1 = Persona(1, 'Juan jose', 'Pena', 'jasdiausd@mail.com')
-    personas_actualizas = PersonaDAO.actualizar(persona1)
-    log.debug(f'Personas actulizadas: {peronas_actualizadas}')
+    #persona1 = Persona(1, 'Juan jose', 'Pena', 'jasdiausd@mail.com')
+    #personas_actualizas = PersonaDAO.actualizar(persona1)
+    #log.debug(f'Personas actulizadas: {peronas_actualizadas}')
 
 
     # Insertar un registro

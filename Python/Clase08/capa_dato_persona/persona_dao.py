@@ -1,0 +1,13 @@
+class PersonaDAO:
+    """
+    DAO significa: Data access Object
+    CRUD significa:
+                    Create -> Insertar
+                    Read   -> Seleccionar
+                    Update -> Actualizar
+                    DElete -> Eliminar
+    """
+    _SELECECCIONAR = "SELECT * FROM persona ORDER BY id_persona"
+    _INSERTAR = "INSERT INT persona(nombre, apellido, email) VALUES (%s, %s, %s)"
+    _ACTUALIZAR = "UPDATE persona SET nombre=%s, apellido=%s, email=%s WHERE id_persona=%s"
+    _ELIMINAR = "DELETE FROM persona WHERE id_persona=%s"

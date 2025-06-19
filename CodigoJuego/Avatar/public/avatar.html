@@ -7,8 +7,24 @@
     <script src="./js/avatar.js"></script>
 </head>
 <body>
-    <!--/* Aqui va mi comentario css */ -->
+    
     <h1>AVATAR 🔥 🌊 🌪 ⛰</h1> <!-- Esto es statico, No Cambia, el h1 se utiliza una vez -->
+
+    <!-- Botón para mostrar/ocultar reglas -->
+    <button id="boton-reglas">Reglas del juego</button>
+
+    <section id="reglas-juego"  style="position: fixed; top: 50px; right: 20px; width: 250px; background: #f0f0f0; padding: 10px; border: 1px solid #ccc;">
+        <h2>Reglas del Juego</h2>
+        <p>1. Antes de jugar, selecciona un personaje.</p>
+        <p>2. Tú y el enemigo comenzarán con <strong>3 vidas cada uno</strong>.</p>
+        <p>3. Ataques: </p>
+        <ul>
+            <li><strong>Patada 🦶</strong> vence a <strong>Punio 💪</strong></li>
+            <li><strong>Punio 💪</strong> vence a <strong>Barrida 🤸‍♀️</strong></li>
+            <li><strong>Barrida 🤸‍♀️</strong> vence a <strong>Patada 🦶</strong></li>
+            <li>Si ambos eligen el mismo ataque, es un empate.</li>
+        </ul>
+    </section>
 
     <section id = "seleccionar-personaje">
         <h2>Elige tu personaje</h2>
@@ -25,13 +41,13 @@
         <label for="Toph">Toph</label>
         <input type="radio" name="personaje" id="Toph">
 
-        <button id="boton-personaje">Seleccionar</button> > <!--Boton para seleccionar personajes-->
+        <button id="boton-personaje">Seleccionar</button>  <!--Boton para seleccionar personajes-->
     </section>
 
     <section id="seleccionar-ataque">
         <h2>Elige tu ataque</h2> <!--Se puede utilizar varias veces-->
-        <p>Tu personaje <span id="personaje-jugador"></span> tiene <span>3</span> vidas</p> <!-- Pero esto debe ser dinamico, necesitamos que cambie-->
-        <p>El personaje <span id="personaje-enemigo"></span> del enemigo tiene <span>3</span> vidas</p> <!--Con la etiqueta spam vamos a modificar el 3 con JS-->
+        <p>Tu personaje <span id="personaje-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p> <!-- Pero esto debe ser dinamico, necesitamos que cambie-->
+        <p>El personaje <span id="personaje-enemigo"></span> del enemigo tiene <span id="vidas-enemigo" >3</span> vidas</p> <!--Con la etiqueta spam vamos a modificar el 3 con JS-->
         <p>
             <button id="boton-punio">Punio 💪</button>
             <button id="boton-patada">Patada 🦶 🌊</button>
@@ -40,7 +56,6 @@
     </section>
 
     <section id="mensajes"> <!--Será un párrafo dinamico-->
-        <p>Tu personaje atacó con todo el poder dle FUEGO, el personaje del enemigo atacó con el medio poder de la tierra - GANASTE ✨</p>
     </section>
 
     <section id="reiniciar">

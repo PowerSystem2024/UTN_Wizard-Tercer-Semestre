@@ -1,12 +1,13 @@
 
 -- Comenzamos con CRUD: create(inserter), read(leer), update(actualizar), delete(eliminar)
 -- Lista los estudianres (read)
-SELECT * FROM estudiantes.estudiantes2025;
+SELECT * FROM estudiantes2022;
 -- Insertar estudiantes
-INSERT INTO studiantes2025 (nombre, apellido, telefono, email) VALUES ("Juan", "Perez", "2652654549"; "Juna@mail.com");
+INSERT INTO estudiantes2022 (nombre, apellido, telefono, email) 
+VALUES ('Juan', 'Perez', '2652654545', 'juan@mail.com');
 -- Update (modificar)
-UPDATE estudiantes2025 SET nombre="Juan Carlos", apellido="Garcia" WHERE indestudiantes2025= 1;
+UPDATE estudiantes2022 SET nombre="Juan Carlos", apellido="Garcia" WHERE idestudiantes2022= 1;
 -- Delete (liminar)
-DELETE FROM estudiantes2025 WHERE indestudiantes2025=1;
+DELETE FROM estudiantes2022 WHERE idestudiantes2022=1;
 -- Para modificar el indestudiantes2025 y comience en 1
-ALTER TABLE indestudiantes2025 AUTO_INCREMENT = 1;
+ALTER TABLE indestudiantes2022 AUTO_INCREMENT = 1;

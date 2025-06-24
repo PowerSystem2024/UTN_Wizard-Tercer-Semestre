@@ -1,0 +1,47 @@
+09:22:08 PM:DEBUG [logger_base.py:12] Mensaje a nivel debug
+09:22:08 PM:INFO [logger_base.py:13] Mensaje a nivel info
+09:22:08 PM:WARNING [logger_base.py:14] Mensaje a nivel warning
+09:22:08 PM:ERROR [logger_base.py:15] Mensaje a nivel error
+09:22:08 PM:CRITICAL [logger_base.py:16] Mensaje a nivel critical
+06:50:35 AM:DEBUG [Persona.py:53] 
+            Id Persona: 1,
+            Nombre: Juan,
+            Apellido: Perez,
+            Email: jperez@mail.com
+    
+06:54:39 AM:DEBUG [Persona.py:53] 
+            Id Persona: 1,
+            Nombre: Juan,
+            Apellido: Perez,
+            Email: jperez@mail.com
+    
+06:54:39 AM:DEBUG [Persona.py:55] 
+            Id Persona: None,
+            Nombre: Jose,
+            Apellido: Lepez,
+            Email: ljose@mail.com
+    
+06:54:39 AM:DEBUG [Persona.py:57] 
+            Id Persona: 1,
+            Nombre: Juan,
+            Apellido: Perez,
+            Email: jperez@mail.com
+    
+07:11:56 AM:ERROR [conexion.py:27] Ocurrio un error: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+07:18:31 AM:ERROR [conexion.py:27] Ocurrio un error: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+07:23:21 AM:ERROR [conexion.py:27] Ocurrio un error: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+07:24:04 AM:ERROR [conexion.py:27] Ocurrio un error: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+07:26:29 AM:ERROR [conexion.py:27] Ocurrio un error: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+07:29:24 AM:ERROR [conexion.py:27] Ocurrio un error: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+07:32:08 AM:ERROR [conexion.py:27] Ocurrio un error: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+07:32:55 AM:ERROR [conexion.py:27] Ocurrio un error: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+07:39:34 AM:ERROR [conexion.py:27] Ocurrio un error: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+07:40:51 AM:ERROR [conexion.py:27] Ocurrio un error: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+07:43:17 AM:ERROR [conexion.py:28] Ocurrio un error: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+08:07:58 PM:ERROR [conexion.py:27] Ocurrio un error: connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+02:11:55 AM:ERROR [conexion.py:27] Ocurrio un error: connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+04:51:35 PM:ERROR [conexion.py:41] Ocurrió un error al obtener el pool: 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte

@@ -11,7 +11,7 @@ class Conexion:
     _USERNAME = 'postgres'
     _PASSWORD = 'admin'
     _DB_PORT = '5432'
-    _HOST = '192.168.10.21'
+    _HOST = '127.0.0.1'
     _conexion = None   # Atributo para almacenar la conexión
     _cursor = None     # Atributo para almacenar el cursor
 

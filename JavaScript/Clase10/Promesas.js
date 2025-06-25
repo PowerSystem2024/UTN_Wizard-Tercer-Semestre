@@ -29,7 +29,7 @@ let promesa = new Promise((Resolver) => {
     () =>
       Resolver("Saludos desde promesa, callback, función flecha y setTimeout"),
     3000
-  )
+  );
   //console.log('Final promesa');
 });
 

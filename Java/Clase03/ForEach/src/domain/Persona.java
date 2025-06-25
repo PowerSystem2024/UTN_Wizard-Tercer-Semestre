@@ -7,9 +7,7 @@ public class Persona {
 
     public Persona(String nombre) {
         this.nombre = nombre;
-    }
-    
-    
+    }    
 
     public String getNombre() {
         return nombre;
@@ -22,5 +20,7 @@ public class Persona {
     @Override
     public String toString() {
         return "Persona{" + "nombre=" + nombre + '}';
-    }  
+    }
+    
+    
 }

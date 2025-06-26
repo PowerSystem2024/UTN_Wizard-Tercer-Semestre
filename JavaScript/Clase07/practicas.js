@@ -72,7 +72,7 @@ function resolverNReinas(N) {
       console.log(fila);
     }
 
-    console.log("\n--------------------------\n");
+    console.log("\n--------------------------\n"); // Console log para verificar informacion
   });
 }
 

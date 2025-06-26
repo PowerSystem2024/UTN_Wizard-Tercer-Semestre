@@ -149,3 +149,7 @@
 07:51:39 PM:DEBUG [conexion.py:18] Conexion obtenida del poll: <connection object at 0x0000022490836020; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
 07:51:39 PM:DEBUG [conexion.py:18] Conexion obtenida del poll: <connection object at 0x0000022490836130; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
 07:51:39 PM:DEBUG [conexion.py:18] Conexion obtenida del poll: <connection object at 0x0000022490836240; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+07:37:38 PM:DEBUG [conexion.py:36] creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000016EC0A1E7E0>
+07:37:38 PM:DEBUG [conexion.py:18] Conexion obtenida del poll: <connection object at 0x0000016EC0A16020; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+07:37:38 PM:DEBUG [conexion.py:18] Conexion obtenida del poll: <connection object at 0x0000016EC0A16130; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+07:37:38 PM:DEBUG [conexion.py:18] Conexion obtenida del poll: <connection object at 0x0000016EC0A16240; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>

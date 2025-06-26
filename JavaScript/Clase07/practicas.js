@@ -72,9 +72,9 @@ function resolverNReinas(N) {
       console.log(fila);
     }
 
-    console.log("\n--------------------------\n");
+    console.log("\n--------------------------\n"); // Console log para verificar informacion
   });
 }
 
-// Ejecutamos el algoritmo para N = 8 (puede cambiarse por otro número)
+// Ejecutamos el algoritmo para N = 8 
 resolverNReinas(8);

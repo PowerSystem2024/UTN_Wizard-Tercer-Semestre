@@ -10,7 +10,7 @@ log.basicConfig(
     datefmt="%I:%M:%S %p",  # Formato de la hora (12 horas con AM/PM)
     handlers=[
         log.FileHandler("capa_datos.log"),  # Guardará los logs en un archivo llamado 'capa_datos.log'
-        log.StreamHandler()  # También los mostrará por consola en tiempo real
+        log.StreamHandler() 
     ]
 )
 

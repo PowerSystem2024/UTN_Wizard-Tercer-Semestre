@@ -11,7 +11,7 @@ function crearTablero(n) {
 // Muestra los números en cada casilla o símbolos especiales según el estado de la casilla
 function imprimirTablero(tablero) {
   const n = tablero.length; // Tamaño del tablero (n x n)
-  const totalMovimientos = n * n; // Total de casillas para visitar
+  const totalMovimientos = n * n; 
 
   // Construimos el encabezado de columnas con números para identificar columnas
   let encabezado = "      "; // Espacio inicial para la fila de números

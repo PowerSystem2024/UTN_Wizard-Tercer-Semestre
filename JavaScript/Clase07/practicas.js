@@ -76,5 +76,5 @@ function resolverNReinas(N) {
   });
 }
 
-// Ejecutamos el algoritmo para N = 8 (puede cambiarse por otro número)
+// Ejecutamos el algoritmo para N = 8 
 resolverNReinas(8);

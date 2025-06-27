@@ -35,5 +35,6 @@ public class mundoPC {
         //Crear mas objetos de tipo computadora con todo sus elementes
         //ccompletar una lista en el objeto orden1 que llegue a los 10 elementos
         //probar de esta manera los métodos al maximo rendimiento
+        
     }
 }

@@ -17,7 +17,7 @@ public class Clase1 {
     public void metodoPublico(){
             System.out.println("Metodo publico");
     }
-    protected void metodoProtected(){
+    protected voidd metodoProtected(){
         System.out.println("Metodo protected");
     }
     

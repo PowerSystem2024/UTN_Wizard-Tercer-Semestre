@@ -1,134 +1,137 @@
-// Clase base que representa un dispositivo de entrada (como ratón o teclado)
-class DispositivoEntrada {
-  constructor(tipoEntrada, marca) {
-    this._tipoEntrada = tipoEntrada;
-    this._marca = marca;
-  }
-
-  // Getter y Setter para tipoEntrada
-  get tipoEntrada() {
-    return this._tipoEntrada;
-  }
-
-  set tipoEntrada(tipoEntrada) {
-    this._tipoEntrada = tipoEntrada;
-  }
-
-  // Getter y Setter para marca
-  get marca() {
-    return this._marca;
-  }
-
-  set marca(marca) {
-    this._marca = marca;
-  }
+class DispositivosEntrada{
+    constructor(tipoEntrada, marca){
+        this._tipoEntrada = tipoEntrada;
+        this._marca = marca;
+    }
+    get tipoEntrada(){
+        return this._tipoEntrada;
+    }
+    set tipoEntrada(tipoEntrada){
+        this._tipoEntrada = tipoEntrada;
+    }
+    get marca(){
+        return this._marca;
+    }
+    set marca(marca){
+        this._marca = marca;
+    }
 }
 
-// Subclase que representa un ratón, hereda de DispositivoEntrada
-class Raton extends DispositivoEntrada {
-  static contadorRatones = 0; // Contador estático para asignar ID único
+class Raton extends DispositivosEntrada{
+    static contadorRatones = 0;
 
-  constructor(tipoEntrada, marca) {
-    super(tipoEntrada, marca); // Llama al constructor de la clase padre
-    this.idRaton = ++Raton.contadorRatones; // Asigna ID único
-  }
-
-  toString() {
-    return `Raton [ID: ${this.idRaton}, Tipo Entrada: ${this.tipoEntrada}, Marca: ${this.marca}]`;
-  }
+    constructor(tipoEntrada, marca){
+        super(tipoEntrada, marca);
+        this._idRaton = ++Raton.contadorRatones;
+    }
+    get idRaton(){
+        return this._idRaton;
+    }
+    toString(){
+        return `Raton: [idRaton: ${this._idRaton}, tipoEntrada: ${this._tipoEntrada}, marca: ${this._marca}]`; 
+    }
 }
 
-// Subclase que representa un teclado, hereda de DispositivoEntrada
-class Teclado extends DispositivoEntrada {
-  static contadorTeclado = 0;
+let raton1 = new Raton("USB", "HP");
+console.log(raton1.toString());
+let raton2 = new Raton("Bluetooth", "Dell");
+console.log(raton2.toString());
 
-  constructor(tipoEntrada, marca) {
-    super(tipoEntrada, marca);
-    this.idTeclado = ++Teclado.contadorTeclado;
-  }
 
-  toString() {
-    return `Teclado [ID: ${this.idTeclado}, Tipo Entrada: ${this.tipoEntrada}, Marca: ${this.marca}]`;
-  }
+class Teclado extends DispositivosEntrada{
+    static contadorTeclado = 0;
+
+    constructor(tipoEntrada, marca){
+        super(tipoEntrada, marca);
+        this._idTeclado = ++Teclado.contadorTeclado;
+    }
+    get idTeclado(){
+        return this._idTeclado;
+    }
+    toString(){
+        return `Teclado: [idTeclado: ${this._idTeclado}, tipoEntrada: ${this._tipoEntrada}, marca: ${this._marca}]`;
+    }
 }
 
-// Clase que representa un monitor
-class Monitor {
-  static contadorMonitores = 0;
+let teclado1 = new Teclado("USB", "HP");
+console.log(teclado1.toString());
+let teclado2 = new Teclado("Bluetooth", "MSI");
+console.log(teclado2.toString());
 
-  constructor(marca, tamaño) {
-    this.idMonitor = ++Monitor.contadorMonitores;
-    this.marca = marca;
-    this.tamaño = tamaño;
-  }
 
-  toString() {
-    return `Monitor [ID: ${this.idMonitor}, Marca: ${this.marca}, Tamaño: ${this.tamaño}]`;
-  }
+class Monitor{
+    static contadorMonitores = 0;
+
+    constructor(marca, tamanio){
+        this._idMonitor = ++Monitor.contadorMonitores;
+        this._marca = marca;
+        this._tamanio = tamanio;
+    }
+    get idMonitor(){
+        return this._idMonitor;
+    }
+    toString(){
+        return `Monitor: [idMonitor: ${this._idMonitor}, marca: ${this._marca}, tamaño: ${this._tamanio}]`;
+    }
 }
 
-// Clase que representa una computadora, compuesta por monitor, teclado y ratón
+let monitor1 = new Monitor("HP", 15);
+let monitor2 = new Monitor("Dell", 27);
+console.log(monitor1.toString());
+console.log(monitor2.toString());
+
+
 class Computadora {
-  static contadorComputadoras = 0;
+    static contadorComputadoras = 0;
 
-  constructor(nombre, monitor, teclado, raton) {
-    this.idComputadora = ++Computadora.contadorComputadoras;
-    this.nombre = nombre;
-    this.monitor = monitor;
-    this.teclado = teclado;
-    this.raton = raton;
-  }
-
-  toString() {
-    return `Computadora [ID: ${this.idComputadora}, Nombre: ${
-      this.nombre
-    }]\n  ${this.monitor.toString()}\n  ${this.teclado.toString()}\n  ${this.raton.toString()}`;
-  }
+    constructor(nombre, monitor, raton, teclado){
+        this._idComputadora = ++Computadora.contadorComputadoras;
+        this._nombre = nombre;
+        this._monitor = monitor;
+        this._raton = raton;
+        this._teclado = teclado;
+    }
+    toString(){
+        return `Computadora ${this._idComputadora}: ${this._nombre}\n ${this._monitor}\n ${this._raton}\n ${this._teclado}`
+    }
 }
 
-// Clase que representa una orden de compra, puede contener varias computadoras
+let computadora1 = new Computadora("HP", monitor1, raton1, teclado1);
+console.log(computadora1.toString());
+console.log(`${computadora1}`); //Llama automaticamnte al toString
+
+let computadora2 = new Computadora("Aser", monitor2, raton2, teclado2);
+console.log(`${computadora2}`);
+
 class Orden {
-  static contadorOrdenes = 0;
+    static contadorOrdenes = 0;
 
-  constructor() {
-    this._idOrden = ++Orden.contadorOrdenes;
-    this._computadoras = []; // Lista de computadoras agregadas a la orden
-  }
-
-  // Método para agregar una computadora a la orden
-  agregarComputadora(computadora) {
-    this._computadoras.push(computadora);
-  }
-
-  // Muestra toda la información de la orden y las computadoras que la componen
-  mostrarOrden() {
-    let computadorasStr = this._computadoras
-      .map((c) => c.toString())
-      .join("\n\n");
-    console.log(`Orden [ID: ${this._idOrden}]\n${computadorasStr}`);
-  }
+    constructor(){
+        this._idOrden = ++Orden.contadorOrdenes;
+        this._computadoras = []; //Arreglo vacio
+    }
+    get idOrden(){
+        return this._idOrden;
+    }
+    agregarComputadora(computadora){
+        this._computadoras.push(computadora); //Agregamos los objetos
+    }
+    mostrarOrden(){ //Equivale al toString
+        let computadorasOrden = ""; //Variable temporal
+        for(let computadora of this._computadoras){
+            computadorasOrden += `\n${computadora}`;
+        }
+        console.log(`Orden: ${this._idOrden}, Computadoras: ${computadorasOrden}`);
+    }
 }
 
-// === Ejecución del programa ===
-
-// Crear dispositivos de entrada y monitor
-let raton1 = new Raton("USB", "Logitech");
-let teclado1 = new Teclado("Bluetooth", "Redragon");
-let monitor1 = new Monitor("Samsung", "27 pulgadas");
-
-// Crear computadora usando los dispositivos creados
-let computadora1 = new Computadora("PC Gamer", monitor1, teclado1, raton1);
-
-// Crear otra computadora con distintos dispositivos
-let raton2 = new Raton("Bluetooth", "Genius");
-let teclado2 = new Teclado("USB", "Logitech");
-let monitor2 = new Monitor("LG", "24 pulgadas");
-let computadora2 = new Computadora("Oficina", monitor2, teclado2, raton2);
-
-// Crear una orden y agregar las computadoras
 let orden1 = new Orden();
 orden1.agregarComputadora(computadora1);
 orden1.agregarComputadora(computadora2);
-
-// Mostrar detalles de la orden completa
+orden1.agregarComputadora(computadora2); //Se puede repetir una orden
 orden1.mostrarOrden();
+
+let orden2 = new Orden();
+orden2.agregarComputadora(computadora2);
+orden2.agregarComputadora(computadora2);
+orden2.mostrarOrden();

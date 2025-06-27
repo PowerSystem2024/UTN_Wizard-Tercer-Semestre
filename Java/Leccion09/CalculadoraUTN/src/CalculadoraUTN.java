@@ -50,7 +50,7 @@ public class CalculadoraUTN {
         System.out.print("Ingrese el segundo número: ");
         var operando2 = Double.parseDouble(entrada.nextLine());
 
-        Double resultado; // Variable que contendrá el resultado final
+        Double resultado; // Esta variable que contendrá el resultado final
 
         switch (operacion) {
             case 1 -> {

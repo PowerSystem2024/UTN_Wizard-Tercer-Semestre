@@ -1,12 +1,12 @@
 import psycopg2 as bd  # Se importa el módulo para conectar con la base de datos PostgreSQL
 
 # En este bloque se trabaja con transacciones: o se ejecutan todos los cambios correctamente,
-# o no se guarda nada. Así se asegura la integridad de los datos en la base.
+# o no se guardará nada. Así se asegura la integridad de los datos en la base.
 
 conexion = bd.connect(
     user="postgres",
     password="admin",
-    host="127.0.0.1",
+    host="127.0.0.1", 
     port="5432",
     database="test_bd"
 )

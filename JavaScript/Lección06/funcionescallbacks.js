@@ -22,7 +22,7 @@ function sumar(op1, op2, funcioncallback) {
     funcioncallback(`Resultado: ${res}`);
 }
 
-sumar(5, 3, imp);  // Resultado: 8
+sumar(5, 3, imp);  // Muestra resultado: 8
 
 
 // Asincronía con setTimeout

@@ -35,7 +35,7 @@ try {
     // Comprobamos si el valor es negativo
     throw "El valor es negativo";
   }
-} catch (error) {
+} cattch (error) {
   // Capturamos el error lanzado anteriormente
   console.log("Error: " + error); // Muestra el error como texto
   console.log("Error: " + error.name); // Si es un objeto Error, muestra su nombre

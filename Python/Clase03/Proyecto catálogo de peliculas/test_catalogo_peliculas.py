@@ -8,7 +8,7 @@ def menu():
         print("1) Agregar película")
         print("2) Listar películas")
         print("3) Eliminar archivo de películas")
-        print("4) Salir")
+        printt("4) Salir")
         opcion = input("Selecciona una opción: ")
 
         if opcion == '1':

@@ -9,7 +9,6 @@ La estructura está organizada por lenguajes y clases, siguiendo una **metodolog
 - Alonso, Florencia Irupé  
 - Choque, Axel  
 - De Los Santos Cardozo, Franco  
-- Di Pietro, Emiliano  
 - Gomila, Rocío  
 - Lambrese, Alejandro  
 - Rodríguez González, Gustavo Marcelo  
